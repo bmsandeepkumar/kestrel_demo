@@ -50,7 +50,7 @@ This checklist implements [requirements.md](requirements.md) using the architect
 
 **Validate**
 
-- [ ] A valid booking can be completed from start to finish without a login (browser click-through pending).
+- [x] A valid booking can be completed from start to finish without a login (confirmed by user on the public URL).
 - [ ] Invalid form input is rejected; a valid correction succeeds.
 - [ ] A booked slot cannot be booked again in the same browser, including after reload.
 - [ ] The saved instant is unchanged when viewed in another time zone.
@@ -77,7 +77,7 @@ Railway build: `npm run build`; start: `npm start`.
 
 - [x] Configure Railway project and web service to build the Vite app and serve `dist/` on its assigned port with single-page-app fallback.
 - [x] Deploy to a public Railway domain and record the actual build and start commands used.
-- [ ] Open the public link in a fresh browser session, complete a booking, and verify the confirmation after reload.
+- [x] Open the public link in a fresh browser session, complete a booking, and verify the confirmation after reload (confirmed by user).
 - [ ] Record a two-minute walkthrough: change the invitee zone, compare both local times, book near a daylight-saving change, and show confirmation.
 - [x] Draft the submission note in 250 words or fewer: choice and evidence, what was left out, and one AI suggestion that was wrong or overruled.
 

@@ -106,13 +106,14 @@ export default function App() {
     const booking = { ...candidate, id: crypto.randomUUID() }
     try {
       const next = saveBooking(booking)
-      sessionStorage.setItem('kestrel-last-booking', booking.id)
       setBookings(next)
-      setConfirmation(booking)
-      setStep('done')
     } catch {
       setError('We could not save this booking in your browser. Please try again.')
+      return
     }
+    try { sessionStorage.setItem('kestrel-last-booking', booking.id) } catch { /* Confirmation still works. */ }
+    setConfirmation(booking)
+    setStep('done')
   }
 
   function bookAnother() {
