@@ -71,15 +71,19 @@ This checklist implements [requirements.md](requirements.md) using the architect
 
 ## 5. Publish and prepare the submission
 
+Public prototype: https://web-production-6e3dcaf2.up.railway.app/  
+Source repository: https://github.com/bmsandeepkumar/kestrel_demo  
+Railway build: `npm run build`; start: `npm start`.
+
 - [x] Configure Railway project and web service to build the Vite app and serve `dist/` on its assigned port with single-page-app fallback.
-- [ ] Deploy to a public Railway domain and record the actual build and start commands used.
+- [x] Deploy to a public Railway domain and record the actual build and start commands used.
 - [ ] Open the public link in a fresh browser session, complete a booking, and verify the confirmation after reload.
 - [ ] Record a two-minute walkthrough: change the invitee zone, compare both local times, book near a daylight-saving change, and show confirmation.
 - [x] Draft the submission note in 250 words or fewer: choice and evidence, what was left out, and one AI suggestion that was wrong or overruled.
 
 **Validate**
 
-- [ ] The public link opens without a login and works on desktop and mobile.
+- [ ] The public link opens without a login and works on desktop and mobile (HTTP 200 and static assets verified; interactive browser check pending).
 - [ ] The recording is at most two minutes and shows the working feature rather than an analysis dashboard.
 - [ ] The note makes no claim of guaranteed revenue retention or of repairs outside the prototype.
 
